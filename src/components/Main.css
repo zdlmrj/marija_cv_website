@@ -1,0 +1,429 @@
+.MainPage {
+  text-align: center;
+  height: max-content;
+  width: auto;
+  padding: 20px;
+}
+.MainContainer{
+  background-color: #222;;
+  border-radius: 40px;
+  position: relative;
+  padding: 40px 70px 60px;
+}
+
+.MainHeader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #d5d5d5;
+  padding-bottom: 40px;
+}
+
+.MainHeaderContent{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.MainSiteNav {
+  float: right;
+  margin: 0 0 0 auto;
+}
+
+.MainSiteNavList {
+  gap: 40px;
+  list-style: none;
+  display: inline-flex;
+  color: #d5d5d5;
+}
+
+.MainSiteNavList li a {text-decoration: none; color: #d5d5d5;}
+
+.TextLogo {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LogoText {
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.LogoSymbol {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: firebrick;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.AboutMe {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #d5d5d5;
+  margin-bottom: 50px;
+}
+
+.MyImageContainer {
+  background-color: #444;
+  border: 18px solid #444;
+  -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,.8);
+  -moz-box-shadow: 0 0 25px 0 rgba(0,0,0,.8);
+  box-shadow: 0 0 25px 0 rgba(0,0,0,.8);
+  /*border-radius: 50%;*/
+  width: fit-content;
+  height: fit-content;
+  margin: 0 15px 0 15px;
+}
+
+.MyImage {
+  /*background-image: url("../IMG_3819.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  background-position: center;
+}
+
+.filepond--root,
+.filepond--root .filepond--drop-label {
+    height: 300px !important;
+    max-height: 300px;
+    width: 300px !important;
+    max-width: 300px;
+}
+
+/*.MyImage :global(.filepond--root) {*/
+/*  height: 300px !important;*/
+/*  max-height: 300px;*/
+/*  width: 300px !important;*/
+/*  max-width: 300px;*/
+/*}*/
+
+.filepond--item {
+  top: -16px !important;
+  height: 300px !important;
+}
+
+.filepond--list-scroller {
+  overflow: hidden !important;
+  /*height: 300px;*/
+}
+
+/*.filepond--action-remove-item,*/
+.filepond--file-info,
+.filepond--image-preview-overlay {
+  display: none !important;
+}
+
+.filepond--image-preview,
+.filepond--image-preview-wrapper,
+.filepond--item-panel > * {
+  background: transparent !important;
+}
+
+.RemoveImageBtn {
+  cursor: pointer;
+  padding: 8px 10px !important;
+  margin: 10px 0 0 0 !important;
+}
+
+
+.MyBio {
+  margin: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.MyBio h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.Measurer {
+  position: fixed;
+  top: -100px;
+  left: -9999px;
+  font-weight: 500;
+  word-break: break-word;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  visibility: hidden !important;
+}
+
+/*.MeasurerInput {
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  visibility: hidden !important;
+  position: fixed;
+  top: -100px;
+  left: -9999px;
+  font-weight: 500;
+  word-break: break-word;
+  line-height: 20px;
+  margin-right: 10px;
+}*/
+
+.MyBio textarea, .TextBox {
+  margin-top: 0;
+  text-align: left;
+  resize: none;
+  word-break: break-word;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  color: #d5d5d5;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.TextBox {
+  margin-top: 10px !important;
+}
+
+.MyBioContactBtnContainer{
+  margin-top: 15px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.MyBioContactBtn, .AddSkillBtn, .RemoveImageBtn {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 10px 10px -8px rgba(0,0,0,.78);
+  cursor: pointer;
+  padding: 8px 20px;
+  text-decoration: none;
+  border: 2px solid #d5d5d5;
+  border-radius: 33px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.AddSkillBtn {
+  padding: 8px 10px !important;
+  margin: 10px 0 0 0 !important;
+}
+
+.BtnDiv  {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.MyBioContactBtn:hover, .MyBioContactBtn:active {
+  background-color: #d5d5d5;
+  color: #333;
+}
+
+.Resume {
+  color: #d5d5d5 !important;
+}
+
+.Resume h2 {
+  border-bottom: 2px solid #d5d5d5;
+  text-align: left;
+}
+
+.ResumeSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.ResumeSection div:first-child {
+  width: 25%;
+  margin-right: 10px;
+  display: flex;
+  align-items: baseline;
+
+}
+
+.ResumeSectionInput, .MotherLanguageInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #d5d5d5 !important;
+}
+
+.ResumeSection div:nth-child(2) {
+  width: 75%;
+}
+
+.EducationSection {
+  margin-bottom: 10px;
+}
+
+.EmptyEducationInfo {
+  border: 1px solid #d5d5d5 !important;
+  border-radius: 4px;
+}
+
+.TitleDiv {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center !important;
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
+.Title {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px !important;
+  color: #d5d5d5;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.MotherLanguageContainer {
+  margin-bottom: 20px;
+}
+
+.ForeignLanguagesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LanguagesTable {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.LanguagesTable td, .LanguagesTable th {
+  border: 1px solid;
+}
+
+.LanguagesTable input{
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #d5d5d5;
+  width: 100%;
+}
+
+.SkillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SkillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100% !important;
+  align-items: center !important;
+}
+
+.SkillDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  border-right: 1px solid #d5d5d5;
+  width: fit-content !important;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.SkillDivPrivate {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+
+.SkillInput {
+  text-align: start;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #d5d5d5;
+  margin-right: 10px;
+  width: auto;
+}
+
+.EmptySkill {
+  visibility: hidden;
+}
+
+.BinIconButton {
+  border: none;
+  background: transparent;
+  color: #d5d5d5;
+  cursor: pointer;
+  padding: 1px;
+  margin-right: 10px;
+}
+
+.BinIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.LanguageBinIconButton {
+  margin: 0 5px !important;
+}
+
+.SaveChangesBtnDiv  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.IsDragging {
+  visibility: hidden !important;
+}
+
+.DragHandle {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: move;
+  touch-action: none;
+}
+
+.InsertAfter::after {
+  content: '';
+  width: 0;
+  height: 20px;
+  border-right: 4px solid #ccd8ff;
+  border-radius: 2px;
+  position: relative;
+  right: -8px;
+}
+
+.InsertBefore::before {
+  content: '';
+  width: 0;
+  height: 20px;
+  border-right: 4px solid #ccd8ff;
+  border-radius: 2px;
+  position: relative;
+  left: -8px;
+}

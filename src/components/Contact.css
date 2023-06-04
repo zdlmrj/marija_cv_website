@@ -1,0 +1,157 @@
+.ContactPage {
+  text-align: center;
+  width: auto;
+  padding: 20px;
+  height: 100vh;
+}
+.ContactContainer{
+  /*background-color: #222;*/
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+  padding: 40px 70px;
+}
+
+.ContactHeader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #222;
+  padding-bottom: 40px;
+}
+
+.ContactHeaderContent{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ContactSiteNav {
+  float: right;
+  margin: 0 0 0 auto;
+}
+
+.ContactSiteNavList {
+  gap: 40px;
+  list-style: none;
+  display: inline-flex;
+  color: #222;
+}
+
+.ContactSiteNavList li a {text-decoration: none; color: #222;}
+
+.TextLogo {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LogoText {
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.LogoSymbol {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: firebrick;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.ContactForm {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #222;
+}
+
+.ContactInfoContainer {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.ContactInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.ContactIcons {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.Contact, .MessageInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Contact h2, .MessageInfo h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.ContactInput, .ContactTextarea, .MessageInfoInput, .MessageInfoTextarea {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 98%;
+  margin-top: 10px;
+}
+
+.ContactInputPrivate {
+  border: 2px solid #bfbfbf !important;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.MessageInfo {
+  margin-bottom: 10px;
+}
+
+.MessageInfoInput, .MessageInfoTextarea {
+  border: 2px solid #bfbfbf !important;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.MessageInfoTextarea {
+  resize: none;
+  height: 150px;
+}
+
+.SendEmailBtn {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 10px 10px -8px rgba(0,0,0,.78);
+  cursor: pointer;
+  padding: 8px 20px;
+  text-decoration: none;
+  border: 2px solid #d5d5d5;
+  border-radius: 33px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.SendEmailBtn:hover, .SendEmailBtn:active {
+  background-color: #d5d5d5;
+  color: #333;
+}
+
+
+
